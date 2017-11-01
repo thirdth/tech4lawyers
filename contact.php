@@ -23,7 +23,7 @@ if ($errNum == '1') {
                 <div class="form-group row">
                   <div class="col-md-12">
                     <div class="col-sm-12">
-                      <label for="company">Name</label>
+                      <label for="name">Name</label>
                       <input type="text" class="form-control" name="name" placeholder="**Required">
                     </div>
                     <div class="col-sm-12">

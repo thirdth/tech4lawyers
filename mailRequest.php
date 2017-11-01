@@ -41,10 +41,9 @@ include 'header.php';
         <?php
         print($subject);
         if (mail('zackglaser@gmail.com', $subject, $message, $from)){
-          echo "Thank you for contacting us. We will, hopefully, be able to answer you shortly.";
+          echo "Your email was sent, thank you for your interest in Tech4Lawyers. We will get back to you as soon as we can.";
         }else {
-          print_r(error_get_last()['message']);
-          print("oh noooo");
+          echo "An error has occurred, please try again.";
         }
 
 
