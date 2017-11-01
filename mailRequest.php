@@ -39,9 +39,8 @@ include 'header.php';
         <div class="infoPod" id="results">
 
         <?php
-        print($subject);
         if (mail('zackglaser@gmail.com', $subject, $message, $from, '-fzack@tech4lawyers.com')){
-          echo "Your email was sent, thank you for your interest in Tech4Lawyers. We will get back to you as soon as we can.";
+          echo "<div class='col-md-12 text-center'><h3>Your email was sent, thank you for your interest in Tech4Lawyers. We will get back to you as soon as we can.</h3></div>";
         }else {
           echo "An error has occurred, please try again.";
         }
