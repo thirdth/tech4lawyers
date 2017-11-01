@@ -19,7 +19,7 @@ if ($errNum == '1') {
       <div class="col-md-8">
         <div class="infoPod">
               <p class="error"><?php echo $error ?></p>
-              <form method="POST" action="mailrequest.php">
+              <form method="POST" action="mailRequest.php">
                 <div class="form-group row">
                   <div class="col-md-12">
                     <div class="col-sm-12">
