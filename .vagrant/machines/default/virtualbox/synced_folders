@@ -1,0 +1,1 @@
+{"virtualbox":{"/var/www/html":{"guestpath":"/var/www/html","hostpath":"C:/Users/Zack_/Documents/Work/odin/beta.tech4lawyers.com","disabled":false,"__vagrantfile":true},"/vagrant":{"guestpath":"/vagrant","hostpath":"C:/Users/Zack_/Documents/Work/odin/beta.tech4lawyers.com","disabled":false,"__vagrantfile":true}}}
