@@ -5,8 +5,8 @@ function get_connected()  {
   $dbaddy = "localhost";
   $dbuser = "Zack";
   $dbpw = "glockner605";
-  $dbdb = "tech4lawyers";
-  $conn = mysqli_connect("localhost", "zack", "glockner605", "tech4lawyers");
+  $dbdb = "tech4lawyers_com";
+  $conn = mysqli_connect("tech4lawyers.com", "tech4lawyerscom", "JwLnZT4b", "tech4lawyers_com");
   if (!$conn) {
     die("Connection Failed: " . mysqli_connect_error());
   }
