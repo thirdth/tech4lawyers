@@ -22,12 +22,13 @@ if(!$captcha){
 }
 
 $name = $_POST['name'];
-$subject = $_POST['subject'];
-$date = date(Y-m-d);
+$subject = "'" . $_POST['subject'] . "'";
+//$date = date("Y-m-d");
 $body = $_POST['body'];
 $to = 'zackglaser@gmail.com';
 $from = 'From:' . $_POST['email'];
-$message = " Name: " . $name . "\r\n Date: " . $date . "\r\n Body: " . $body;
+$message = " raaaaaawr";
+
 include 'header.php';
 ?>
 <section class="container">
@@ -35,8 +36,19 @@ include 'header.php';
     <div class="row">
       <div class="col-md-8">
         <div class="infoPod" id="results">
+
         <?php
-        mail ($to , $subject , $message, $from );
+
+        if (mail('zackglaser@gmail.com', 'My Subject', 'Do not do it', $from)){
+          print("good");
+        }else {
+          print_r(error_get_last()['message']);
+          print("oh noooo");
+        }
+
+
+
+      //  print($success);
 
 
 
