@@ -22,11 +22,12 @@ if(!$captcha){
 }
 
 $name = $_POST['name'];
-$subject = "'" . $_POST['subject'] . "'";
+$subject = '" . $_POST['subject'] . "';
 //$date = date("Y-m-d");
 $body = $_POST['body'];
 $to = 'zackglaser@gmail.com';
-$from = 'From:' . $_POST['email'];
+$from = 'From: zack@tech4lawyers.com';
+$sender = $_POST['email'];
 $message = " raaaaaawr";
 
 include 'header.php';
@@ -38,9 +39,9 @@ include 'header.php';
         <div class="infoPod" id="results">
 
         <?php
-
-        if (mail('zackglaser@gmail.com', 'My Subject', 'Do not do it', $from)){
-          print("good");
+        print($subject);
+        if (mail('zackglaser@gmail.com', $subject, $body, $from)){
+          echo "Thank you for contacting us. We will, hopefully, be able to answer you shortly.";
         }else {
           print_r(error_get_last()['message']);
           print("oh noooo");
