@@ -3,7 +3,7 @@
 <html>
   <head>
 
-    <meta name="description" content="Works of Zack Glaser">
+    <meta name="description" content="Productivity | Efficiency | Security">
     <meta name="author" content="//zackglaser.com">
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
     <meta charset="utf-8">
