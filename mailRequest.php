@@ -22,7 +22,7 @@ if(!$captcha){
 }
 
 $name = $_POST['name'];
-$subject = '" . $_POST['subject'] . "';
+$subject = $_POST['subject'];
 //$date = date("Y-m-d");
 $body = $_POST['body'];
 $to = 'zackglaser@gmail.com';
