@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<?php include 'tech4lawyers.com/t4l_config.php';?>
+<?php include 't4l_config.php';?>
 <html>
   <head>
 
