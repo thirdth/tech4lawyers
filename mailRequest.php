@@ -36,7 +36,7 @@ include 'header.php';
       <div class="col-md-8">
         <div class="infoPod" id="results">
         <?php    if (mail ($to , $subject , $message, $from )) {
-                  echo "<div class='col-md-12 text-center'><h3>Your message has been sent. You should receive a receipt email shortly. You will receive an answer to your request within one business day.</h3></div>";
+                  echo "<div class='col-md-12 text-center'><h3>Your message has been sent.</h3></div>";
                 }else {
                   echo "<div class='col-md-12 text-center'>Something went wrong. Please send your request again. If you continue to have trouble, please contact our office directly1.</div>";
                 }
