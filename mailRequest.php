@@ -40,7 +40,7 @@ include 'header.php';
 
         <?php
         print($subject);
-        if (mail('zackglaser@gmail.com', $subject, $message, $from)){
+        if (mail('zackglaser@gmail.com', $subject, $message, $from, '-fzack@tech4lawyers.com')){
           echo "Your email was sent, thank you for your interest in Tech4Lawyers. We will get back to you as soon as we can.";
         }else {
           echo "An error has occurred, please try again.";
