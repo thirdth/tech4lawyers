@@ -23,12 +23,12 @@ if(!$captcha){
 
 $name = $_POST['name'];
 $subject = $_POST['subject'];
-//$date = date("Y-m-d");
+$date = date("Y-m-d");
 $body = $_POST['body'];
 $to = 'zackglaser@gmail.com';
 $from = 'From: zack@tech4lawyers.com';
 $sender = $_POST['email'];
-$message = " raaaaaawr";
+$message = " Message from: " . $name . "\r\n Email: " . $sender . "\r\n Date: " . $date . "\r\n Message: " . $body;
 
 include 'header.php';
 ?>
@@ -40,7 +40,7 @@ include 'header.php';
 
         <?php
         print($subject);
-        if (mail('zackglaser@gmail.com', $subject, $body, $from)){
+        if (mail('zackglaser@gmail.com', $subject, $message, $from)){
           echo "Thank you for contacting us. We will, hopefully, be able to answer you shortly.";
         }else {
           print_r(error_get_last()['message']);
