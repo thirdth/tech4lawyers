@@ -1,5 +1,5 @@
 <?php
-
+//TODO: add section redirecting user if there is no 'submit' in the POST variable
 if ($_POST['name'] == '')  {
   header("Location: contact.php?error=1");
   die();
