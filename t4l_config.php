@@ -1,6 +1,7 @@
 <?php
 
 // database functions
+// TODO: confirm that this DB is protected
 function get_connected()  {
   $dbaddy = "localhost";
   $dbuser = "Zack";

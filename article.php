@@ -18,7 +18,7 @@ mysqli_close($conn);
 
 
 
-
+// TODO: add BIO section for authors
 echo "    <div class='container'>
             <div class='col-md-12 wrapper'>
               <header class='row'>
@@ -48,6 +48,8 @@ echo "
           </section>
       </div>
     </div>";
+
+// TODO: add comments section with Users
 
 include 'footer.php';
  ?>
