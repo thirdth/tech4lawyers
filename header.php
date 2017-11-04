@@ -27,8 +27,8 @@
     <!-- reCAPTCHA from Google -->
     <script src='https://www.google.com/recaptcha/api.js'></script>
   </head>
-  <?php include_once 'analyticstracking.php'; ?>
   <body>
+    <?php include_once 'analyticstracking.php'; ?>
     <!--collapsable navbar-->
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container-fluid">
