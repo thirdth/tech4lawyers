@@ -26,8 +26,8 @@
     <!-- reCAPTCHA from Google -->
     <script src='https://www.google.com/recaptcha/api.js'></script>
   </head>
-<?php 
-include_once 'analyticstracker.php';
+<?php
+include_once 'analyticstracking.php';
 include 't4l_config.php';
 ?>
   <body>
