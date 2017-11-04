@@ -3,6 +3,7 @@
 <?php include 't4l_config.php';?>
 <html>
   <head>
+    <?php include_once 'analyticstracking.php'; ?>
 <!-- TODO: get favicon -->
 <!-- TODO: add google analytics -->
     <meta name="description" content="Productivity | Efficiency | Security">
@@ -28,7 +29,7 @@
     <script src='https://www.google.com/recaptcha/api.js'></script>
   </head>
   <body>
-    <?php include_once 'analyticstracking.php'; ?>
+
     <!--collapsable navbar-->
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container-fluid">
