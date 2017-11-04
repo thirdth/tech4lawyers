@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <!-- TODO: create README.md and documentation -->
-<?php include 't4l_config.php';?>
 <html>
   <head>
-    <?php include_once 'analyticstracking.php'; ?>
 <!-- TODO: get favicon -->
 <!-- TODO: add google analytics -->
     <meta name="description" content="Productivity | Efficiency | Security">
@@ -28,6 +26,10 @@
     <!-- reCAPTCHA from Google -->
     <script src='https://www.google.com/recaptcha/api.js'></script>
   </head>
+<?php 
+include_once 'analyticstracker.php';
+include 't4l_config.php';
+?>
   <body>
 
     <!--collapsable navbar-->
