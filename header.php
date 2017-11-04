@@ -3,15 +3,6 @@
 <?php include 't4l_config.php';?>
 <html>
   <head>
-<!-- Global site tag (gtag.js) - Google Analytics TODO: make into .js code that can be put on config-->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109209386-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-109209386-1');
-  </script>
 <!-- TODO: get favicon -->
 <!-- TODO: add google analytics -->
     <meta name="description" content="Productivity | Efficiency | Security">
