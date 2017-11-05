@@ -29,7 +29,7 @@ include 't4l_config.php';
     <!-- reCAPTCHA from Google -->
     <script src='https://www.google.com/recaptcha/api.js'></script>
   </head>
-
+<?php include_once 'analyticstracking.php'; ?>
   <body>
     <!--collapsable navbar-->
     <nav class="navbar navbar-inverse navbar-fixed-top">
