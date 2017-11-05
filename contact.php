@@ -1,5 +1,5 @@
 <?php
-include 'header.php';
+include 'includes/header.php';
 
 $errNum = $_GET['error'];
 if ($errNum == '1') {
@@ -51,9 +51,9 @@ if ($errNum == '1') {
               </form>
             </div>
           </div>
-          <?php include 'sidebar.php'; ?>
+          <?php include 'includes/sidebar.php'; ?>
         </div>
       </div>
     </section>
 
-<?php include 'footer.php'; ?>
+<?php include 'includes/footer.php'; ?>

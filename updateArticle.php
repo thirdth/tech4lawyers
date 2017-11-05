@@ -1,7 +1,9 @@
 <?php
 
-include 't4l_config.php';
-
+include 'includes/t4l_config.php';
+if (!$_POST['submit'])  {
+  header("Location: articles.php");
+}
 $conn = get_connected();
 
 $article_id = $_POST['article_id'];

@@ -1,5 +1,5 @@
 <?php
-include 'header.php';
+include 'includes/header.php';
 
 $conn = get_connected();
 
@@ -28,7 +28,7 @@ foreach ($results as $result){
 echo "          </div>
                 <div class='col-md-4'>";
 
-include 'featuredArticle.php';
+include 'includes/featuredArticle.php';
 
 echo "          </div>
               </section>

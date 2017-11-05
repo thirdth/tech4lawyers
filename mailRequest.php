@@ -33,7 +33,7 @@ $from = 'From: zack@tech4lawyers.com';
 $sender = $_POST['email'];
 $message = " Message from: " . $name . "\r\n Email: " . $sender . "\r\n Date: " . $date . "\r\n Message: " . $body;
 
-include 'header.php';
+include 'includes/header.php';
 ?>
 <section class="container">
   <div class="col-md-12 wrapper">
@@ -58,7 +58,7 @@ include 'header.php';
         ?>
         </div>
       </div>
-      <?php include 'sidebar.php'; ?>
+      <?php include 'includes/sidebar.php'; ?>
     </div>
   </div>
 </section>
@@ -69,4 +69,4 @@ include 'header.php';
   </section>
 </main>
 
-<?php include 'footer.php';?>
+<?php include 'includes/footer.php';?>

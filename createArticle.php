@@ -1,4 +1,4 @@
-<?php include 'header.php'; ?>
+<?php include 'includes/header.php'; ?>
 <section class="container">
   <div class="col-md-12 wrapper">
     <div class="row">
@@ -34,4 +34,4 @@
     </div>
   </div>
 </section>
-<?php include 'footer.php'; ?>
+<?php include 'includes/footer.php'; ?>

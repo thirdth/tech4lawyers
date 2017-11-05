@@ -1,4 +1,4 @@
-<?php include 'header.php'; ?>
+<?php include 'includes/header.php'; ?>
 <div class="container-fluid">
   <main class="container">
     <div class="col-md-12 wrapper">
@@ -51,8 +51,8 @@
           </div>
           <!-- TODO: add webapps portion -->
         </div>
-        <?php include 'sidebar.php'; ?>
+        <?php include 'includes/sidebar.php'; ?>
       </section>
     </div>
   </main>
-<?php include 'footer.php'; ?>
+<?php include 'includes/footer.php'; ?>

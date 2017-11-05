@@ -1,5 +1,5 @@
 <?php
-include 'header.php'; ?>
+include 'includes/header.php'; ?>
     <div class="container">
       <div class="col-md-12 wrapper">
         <section class="row">
@@ -40,7 +40,7 @@ include 'header.php'; ?>
                 is just as important as making sure that your firewall is secure.
               </p>
             </div>
-            <?php include 'sidebar.php'; ?>
+            <?php include 'includes/sidebar.php'; ?>
 
           </section>
           <section class="row">
@@ -48,4 +48,4 @@ include 'header.php'; ?>
           </section>
       </div>
     </div>
-<?php include 'footer.php'; ?>
+<?php include 'includes/footer.php'; ?>

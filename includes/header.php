@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <?php
-include 't4l_config.php';
+include_once 'includes/t4l_config.php';
 ?>
 <!-- TODO: create README.md and documentation -->
 <html>
@@ -29,7 +29,7 @@ include 't4l_config.php';
     <!-- reCAPTCHA from Google -->
     <script src='https://www.google.com/recaptcha/api.js'></script>
   </head>
-<?php include_once 'analyticstracking.php'; ?>
+<?php include_once 'includes/analyticstracking.php'; ?>
   <body>
     <!--collapsable navbar-->
     <nav class="navbar navbar-inverse navbar-fixed-top">

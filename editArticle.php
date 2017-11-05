@@ -1,4 +1,4 @@
-<?php include 'header.php';
+<?php include 'includes/header.php';
 
 $conn = get_connected();
 $article_id = $_GET['article_id'];
@@ -48,4 +48,4 @@ $allAuthor = $res->fetch_assoc();
     </div>
   </div>
 </section>
-<?php include 'footer.php'; ?>
+<?php include 'includes/footer.php'; ?>
