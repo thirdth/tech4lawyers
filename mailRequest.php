@@ -1,21 +1,24 @@
 <?php
-//TODO: add section redirecting user if there is no 'submit' in the POST variable
+// redirects user if there is no 'submit' in the POST variable
 if (!$_POST['submit'])  {
   header("Location: contact.php");
 }
+// if POST has no 'name' variable, then redirects to page with error code
 if ($_POST['name'] == '')  {
   header("Location: contact.php?error=1");
   die();
 }
+// if no 'subject' variable, then redirects to page with error code
 if ($_POST['subject'] == '')  {
   header("Location: contact.php?error=2");
   die();
 }
+// if no 'email' variable, then redirects with error code
 if ($_POST['email'] == '')  {
   header("Location: contact.php?error=3");
   die();
 }
-
+// if captcha no good, then redirect with error code
 if(isset($_POST['g-recaptcha-response'])) {
   $captcha=$_POST['g-recaptcha-response'];
 }
@@ -23,7 +26,8 @@ if(!$captcha){
   header("Location: contact.php?&error=6");
   die();
 }
-
+// CONTROLER //
+// get variables out of POST
 $name = $_POST['name'];
 $subject = $_POST['subject'];
 $date = date("Y-m-d");
@@ -33,6 +37,7 @@ $from = 'From: zack@tech4lawyers.com';
 $sender = $_POST['email'];
 $message = " Message from: " . $name . "\r\n Email: " . $sender . "\r\n Date: " . $date . "\r\n Message: " . $body;
 
+// VIEW //
 include 'includes/header.php';
 ?>
 <section class="container">
@@ -47,13 +52,6 @@ include 'includes/header.php';
         }else {
           echo "An error has occurred, please try again.";
         }
-
-
-
-      //  print($success);
-
-
-
 
         ?>
         </div>

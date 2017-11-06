@@ -1,6 +1,6 @@
 <?php
 include 'includes/header.php';
-
+// connect error code to error message
 $errNum = $_GET['error'];
 if ($errNum == '1') {
   $error = "**Please fill in a Company or Organization";

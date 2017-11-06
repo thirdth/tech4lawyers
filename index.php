@@ -43,9 +43,6 @@ include 'includes/header.php'; ?>
             <?php include 'includes/sidebar.php'; ?>
 
           </section>
-          <section class="row">
-
-          </section>
       </div>
     </div>
 <?php include 'includes/footer.php'; ?>
