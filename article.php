@@ -2,7 +2,6 @@
 include 'includes/header.php';
 
 // ** Controler ** //
-
 // find which article to call from the URL
 $article_id = $_GET['article_id'];
 // redirect if URL does not have a specified article
@@ -23,8 +22,6 @@ $allAuthor = $resultAuth->fetch_assoc();
 mysqli_close($conn);
 
 // ** VIEW **//
-
-// TODO: add BIO section for authors
 // basic container for the articles
 echo "    <div class='container'>
             <div class='col-md-12 wrapper'>
@@ -32,7 +29,7 @@ echo "    <div class='container'>
                 <div class='col-md-8'>";
 // specific html for the article section
 echo "          <div class='col-md-12 article'>
-                  <h5 class='author'>Author: " . $allAuthor['First_name'] . " " . $allAuthor['Last_name'] . "</h5>
+                  <a href='/author.php?author_id=" . $all['Author_id'] . "'><h5 class='author'>Author: " . $allAuthor['First_name'] . " " . $allAuthor['Last_name'] . "</h5></a>
                   <h2>" . $all['Title'] . "</h2>
                   <h3>" . $all['Stitle'] . "</h3>
                   <p>" . html_entity_decode($all['Content']) . "</p>
