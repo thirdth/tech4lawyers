@@ -7,7 +7,7 @@ function get_connected()  {
   $dbaddy = "Localhost";
   $dbuserLive = "tech4lawyerscom";
   $dbuser = "Zack";
-  $dbpwLive = "JWLnZT4b"
+  $dbpwLive = "JWLnZT4b";
   $dbpw = "glockner605";
   $dbdbLive = "tech4lawyers_com";
   $dbdb = "tech4lawyers";
