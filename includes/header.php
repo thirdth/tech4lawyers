@@ -6,7 +6,6 @@ include_once 'includes/t4l_config.php';
 <html>
   <head>
 <!-- TODO: get favicon -->
-<!-- TODO: add google analytics -->
     <meta name="description" content="Productivity | Efficiency | Security">
     <meta name="author" content="//zackglaser.com">
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
@@ -16,7 +15,7 @@ include_once 'includes/t4l_config.php';
     <!--change to _blank if you want to open links in new window-->
     <base target="_self">
 
-    <title>tech4lawyers</title>
+    <title>Tech4Lawyers</title>
 <!--TODO: check on polyfil for other browsers -->
     <!--add bootstrap css-->
 <!-- TODO: localize bootstap -->
@@ -29,6 +28,7 @@ include_once 'includes/t4l_config.php';
     <!-- reCAPTCHA from Google -->
     <script src='https://www.google.com/recaptcha/api.js'></script>
   </head>
+<!-- include js for analytics must be right before body tag-->
 <?php include_once 'includes/analyticstracking.php'; ?>
   <body>
     <!--collapsable navbar-->
