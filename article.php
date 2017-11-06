@@ -18,7 +18,7 @@ $all = $result->fetch_assoc();
 $sqlAuthor = "SELECT * from authors where ID = " . $all['Author_id'] . "";
 $resultAuth = mysqli_query($conn, $sqlAuthor);
 $allAuthor = $resultAuth->fetch_assoc();
-// close the connectin because I wasn't born in a barn
+// close the connection
 mysqli_close($conn);
 
 // ** VIEW **//
