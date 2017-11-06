@@ -11,7 +11,7 @@ function get_connected()  {
   $dbpw = "glockner605";
   $dbdbLive = "tech4lawyers_com";
   $dbdb = "tech4lawyers";
-  $conn = mysqli_connect('mysql.tech4lawyers.com', 'tech4lawyerscom', 'JWLnZT4b', 'tech4lawyers');
+  $conn = mysqli_connect('mysql.tech4lawyers.com', 'tech4lawyerscom', 'JWLnZT4b', 'tech4lawyers_com');
   if (!$conn) {
     die("Connection Failed: " . mysqli_connect_error());
   }
