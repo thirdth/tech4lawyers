@@ -37,6 +37,7 @@ echo "            <div class='col-md-12 article'>
                     <h5 class='text-center upperBorder'>Articles:</h4>
                     <p><strong>" . $allArt['Title'] . "</strong></p>
                     <p>" . $blip . "</p>
+                    <a href='/article.php?article_id=" . $allArt['ID'] . "' class='btn pull-right'>Read More . . .</a>
                   </div>";
 echo "
                 </div>";

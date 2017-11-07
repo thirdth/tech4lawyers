@@ -3,16 +3,13 @@
 // database functions
 // TODO: confirm that this DB is protected
 function get_connected()  {
-  $dbaddyLive = "mysql.tech4lawyers.com";
-  $dbaddy = "Localhost";
-  $dbuserLive = "tech4lawyerscom";
-  $dbuser = "Zack";
-  $dbpwLive = "JWLnZT4b";
-  $dbpw = "glockner605";
-  $dbdbLive = "tech4lawyers_com";
-  $dbdb = "tech4lawyers";
-  $conn = mysqli_connect("mysql.tech4lawyers.com", "tech4lawyerscom", "JwLnZT4b", "tech4lawyers_com");
+  $dbaddy = "mysql.tech4lawyers.com";
+  $dbuser = "tech4lawyerscom";
+  $dbpw = "JwLnZT4b";
+  $dbdb = "tech4lawyers_com";
+  $conn = mysqli_connect($dbaddy, $dbuser, $dbpw, $dbdb);
   if (!$conn) {
+  //  echo phpinfo();
     die("Connection Failed: " . mysqli_connect_error());
   }
   return $conn;
