@@ -3,7 +3,7 @@
 // database functions
 // TODO: confirm that this DB is protected
 function get_connected()  {
-  $dbaddy = "mysql.tech4lawyers.com";
+  $dbaddy = "66.33.203.111";
   $dbuser = "tech4lawyerscom";
   $dbpw = "JwLnZT4b";
   $dbdb = "tech4lawyers_com";
