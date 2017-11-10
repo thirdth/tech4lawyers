@@ -4,7 +4,7 @@ include 'includes/header.php';
 $conn = get_connected();
 // CONTROLER //
 // get all info from articles table
-$sql = "SELECT * from articles";
+$sql = "SELECT * from articles where Live=1";
 $results = mysqli_query($conn, $sql);
 // close the connection to the database
 mysqli_close($conn);
