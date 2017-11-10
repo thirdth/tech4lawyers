@@ -18,6 +18,7 @@ $all = $result->fetch_assoc();
 $sqlAuthor = "SELECT * from authors where ID = " . $all['Author_id'] . "";
 $resultAuth = mysqli_query($conn, $sqlAuthor);
 $allAuthor = $resultAuth->fetch_assoc();
+
 // close the connection
 mysqli_close($conn);
 
@@ -28,14 +29,20 @@ echo "    <div class='container'>
               <header class='row'>
                 <div class='col-md-8'>";
 // specific html for the article section
-echo "          <div class='col-md-12 article'>
-                  <a href='/author.php?author_id=" . $all['Author_id'] . "'><h5 class='author'>Author: " . $allAuthor['First_name'] . " " . $allAuthor['Last_name'] . "</h5></a>
-                  <h2>" . $all['Title'] . "</h2>
-                  <h3>" . $all['Stitle'] . "</h3>
-                  <p>" . html_entity_decode($all['Content']) . "</p>
-                </div>";
+  echo "          <div class='col-md-12 article'>
+                    <a href='/author.php?author_id=" . $all['Author_id'] . "'><h5 class='author'>Author: " . $allAuthor['First_name'] . " " . $allAuthor['Last_name'] . "</h5></a>
+                    <h2>" . $all['Title'] . "</h2>
+                    <h3>" . $all['Stitle'] . "</h3>
+                    <p>" . html_entity_decode($all['Content']) . "</p>
+                  </div>
+                  <div class='col-md-12 comments'>
+                    <h5 class='author'>Comments</h5>
+                    ";
+include 'includes/comments.php';
+
 // close div on left column
-echo "         </div>";
+echo "          </div>
+              </div>";
 // include right column
 include 'includes/sidebar.php';
 // close basic container
@@ -44,6 +51,6 @@ echo "
             </div>
           </div>
         </div>";
-// TODO: add comments section with Users
+
 include 'includes/footer.php';
  ?>

@@ -222,8 +222,44 @@ footer{
   list-style-type: decimal;
 }
 
-.para  {
-  padding-top: 20px;
+.comments {
+  margin: 10px;
+  padding: 10px;
+}
+
+.comments button{
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.comments h5  {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #9d9d9d;
+}
+
+.comments label{
+  color: #9d9d9d;
+}
+
+.comments form{
+  margin-bottom: 5px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #9d9d9d;
+}
+
+.comments .g-recaptcha {
+  margin-top: 5px;
+}
+
+.comment{
+  border-bottom: 2px solid #9d9d9d;
+}
+
+.comment p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 7px;
 }
 
 .title  {

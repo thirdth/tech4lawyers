@@ -41,7 +41,7 @@ if ($errNum == '1') {
                       <textarea class="form-control" rows="4" name="body"></textarea>
                     </div>
                     <div class="col-sm-4">
-                      <button type="submit" class="btn btn-primary">Submit</button>
+                      <button type="submit" name="submit" class="btn btn-primary" value="1">Submit</button>
                     </div>
 
                   </div>
