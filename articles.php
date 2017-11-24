@@ -21,7 +21,7 @@ foreach ($results as $result){
   // Decode the shortened string so it can display HTML
   $body = html_entity_decode($blip);
   echo "        <div class='col-md-12 article'>
-                  <h4 class='text-muted'>" . $result['Date_created'] . "</h4>
+                  <h4 class='text-muted text-right'>" . $result['Date_created'] . "</h4>
                   <h2>" . $result['Title'] . "</h2>
                   <h3>" . $result['Stitle'] . "</h3>
                   <p>" . $body . "</strong></p>
